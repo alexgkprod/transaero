@@ -1,0 +1,6 @@
+mixin pages-list(data)
+    +b.UL.pages-list()&attributes(attributes)
+        each page in __pages
+            if page.name !== 'index'
+                +e.item
+                    +e.link(href=page.href)= page.name

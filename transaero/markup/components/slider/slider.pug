@@ -1,0 +1,27 @@
+mixin slider(data)
+    +b.slider()&attributes(attributes)
+        +e.list
+            +e.item
+                +e.img-wrapper
+                    +e.IMG.img(src="%=static=%img/content/slider__img_01.jpg" alt="Slider Item 01" width="1100" height="434")
+                    +e.text
+                        +e.H2.title Открывайте мир
+                            span вместе с Трансаэро
+                        +e.P.subtitle Почувствуйте комфорт современного Boeing 747-300
+            +e.item
+                +e.img-wrapper
+                    +e.IMG.img(src="%=static=%img/content/slider__img_01.jpg" alt="Slider Item 02" width="1100" height="434")
+                    +e.text
+                        +e.H2.title Открывайте мир
+                            span вместе с Трансаэро
+                        +e.P.subtitle Почувствуйте комфорт современного Boeing 747-300
+            +e.item
+                +e.img-wrapper
+                    +e.IMG.img(src="%=static=%img/content/slider__img_01.jpg" alt="Slider Item 03" width="1100" height="434")
+                    +e.text
+                        +e.H2.title Открывайте мир
+                            span вместе с Трансаэро
+                        +e.P.subtitle Почувствуйте комфорт современного Boeing 747-300
+        +e.controls
+            +e.BUTTON.btn_left left
+            +e.BUTTON.btn_right right

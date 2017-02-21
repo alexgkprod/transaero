@@ -1,0 +1,15 @@
+include ../slider/slider
+
+mixin intro(data)
+    +b.SECTION.intro()&attributes(attributes)
+        +e.container
+            +b.row
+                +b.UL.tabs-content
+                    +e.item#first
+                        +slider()
+                    +e.item#second
+                        +e.IMG.img(src="%=static=%img/content/slider__img_01.jpg" alt="Tab Item 02" width="1100" height="434")
+                        +e.H2.title Информация
+                    +e.item#third
+                        +e.IMG.img(src="%=static=%img/content/slider__img_01.jpg" alt="Tab Item 03" width="1100" height="434")
+                        +e.H2.title Привилегии

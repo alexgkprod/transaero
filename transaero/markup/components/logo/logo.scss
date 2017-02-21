@@ -1,0 +1,28 @@
+.logo {
+    margin: 11px auto;
+    margin: rem(11) auto;
+
+    text-align: center;
+
+    @media screen and (min-width: 560px) {
+        float: left;
+    }
+
+    &__link {
+        display: inline-block;
+        max-height: 60px;
+        max-height: rem(60);
+        padding: 0;
+        margin: 0;
+
+        vertical-align: top;
+    }
+    
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+}

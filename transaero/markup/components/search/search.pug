@@ -1,0 +1,5 @@
+mixin search(data)
+    +b.FORM.search#search(action="#" method="#")&attributes(attributes)
+        +e.INPUT.text(type="text" placeholder="поиск по сайту")
+        +e.BUTTON.btn(type="submit" value="Найти")
+            != pugHelpers.Icon.call(locals, {iconName: 'icon_search', className: 'svg-icon', iconWidth: '17', iconHeight: '17'})

@@ -1,0 +1,8 @@
+mixin tabs(data)
+    +b.UL.tabs()&attributes(attributes)
+        +e.btn
+            +e.A.link_active(href="javascript:void(0)" onclick="openTab(event, 'first')") Возможности
+        +e.btn
+            +e.A.link(href="javascript:void(0)" onclick="openTab(event, 'second')") Информация
+        +e.btn
+            +e.A.link(href="javascript:void(0)" onclick="openTab(event, 'third')") Привилегии

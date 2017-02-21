@@ -1,0 +1,61 @@
+.form {
+    margin-top: 20px;
+    margin-top: rem(20);
+    &__item {
+        position: relative;
+
+        padding-bottom: 20px;
+        padding-bottom: rem(20);
+    }
+        
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 0;
+        padding: 5px 8px;
+        padding: rem(5) rem(8);
+        margin: 0;
+
+        border: none;
+        border: 1px solid #c8c8c8;
+        border-width: rem(1);
+        outline: none;
+    }
+        
+    &__label {
+        display: block;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-bottom: rem(5);
+    }
+        
+    &__btn {
+        padding: 0;
+        padding: 5px;
+        padding: rem(5);
+        margin: 0;
+
+        text-transform: uppercase;
+
+        border: none;
+        border: 1px solid #333;
+        border-width: rem(1);
+        background-color: transparent;
+        outline: none;
+    }
+
+}
+
+.error {
+    color: #e42644;
+}
+
+label.error {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    left: rem(5);
+
+    display: block;
+}

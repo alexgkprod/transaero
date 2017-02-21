@@ -1,0 +1,21 @@
+.header {
+    
+    &__container {
+        min-width: 320px;
+        min-width: rem(320);
+        max-width: 1000px;
+        max-width: rem(1000);
+        padding: 0 20px;
+        padding: 0 rem(20);
+        margin: 0 auto;
+    }
+
+    &__top {
+        background-color: #eeeeee;
+    }
+    
+    &__bottom {
+        border-bottom: 1px solid #c8c8c8;
+        border-bottom-width: rem(1);
+    }
+}

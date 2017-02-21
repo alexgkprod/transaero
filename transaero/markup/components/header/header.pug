@@ -1,0 +1,19 @@
+include ../lang/lang
+include ../user/user
+include ../logo/logo
+include ../search/search
+include ../tabs/tabs
+
+mixin header(data)
+    +b.HEADER.header()&attributes(attributes)
+        +e.top
+            +e.container
+                +b.row
+                    +lang()
+                    +user()
+        +e.bottom
+            +e.container
+                +b.row
+                    +logo()
+                    +search()
+                    +tabs()

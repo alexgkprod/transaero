@@ -1,0 +1,115 @@
+.modal {
+    position: relative;
+
+    width: 100%;
+    max-width: 400px;
+    max-width: rem(400);
+    padding: 40px;
+    padding: rem(40);
+    margin: 20px auto;
+    margin: rem(20) auto;
+
+    text-align: center;
+
+    background-color: #fff;
+
+    &__close {
+        position: absolute;
+        top: rem(40);
+        top: 40px;
+        right: 40px;
+        right: rem(40);
+
+        width: 40px;
+        width: rem(40);
+        height: 40px;
+        height: rem(40);
+        padding: 0;
+        margin: 0;
+        
+        border: none;
+        border: 1px solid #333;
+        border-width: rem(1);
+        border-radius: 100%;
+        background-color: transparent;
+        outline: none;
+        &:before,
+        &:after {
+            content: " ";
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            display: block;
+            width: 25px;
+            width: rem(25);
+            height: 1px;
+            height: rem(1);
+            margin-left: -12px;
+            margin-left: rem(-12);
+
+            background-color: #333;
+        }
+            
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+        
+    &__title {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        font-size: 32px;
+        font-size: rem(32);
+        text-transform: uppercase;
+    }
+        
+}
+
+/* TRANSITIONS */
+
+/* overlay at start */
+
+.mfp-fade.mfp-bg {
+    opacity: 0;
+
+    transition: all 0.25s ease-out;
+}
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+
+/* overlay animate out */
+
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+/* content at start */
+
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+
+    transition: all 0.25s ease-out;
+}
+
+/* content animate it */
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+
+/* content animate out */
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}

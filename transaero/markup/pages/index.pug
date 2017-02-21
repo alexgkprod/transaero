@@ -1,0 +1,11 @@
+extends ../layouts/default
+
+include ../components/pages-list/pages-list
+include ../components/intro/intro
+
+block vars
+    -pageSettings.title = 'Трансаэро - Главная';
+
+block content
+    +intro()
+    +pages-list()

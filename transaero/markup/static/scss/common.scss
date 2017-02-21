@@ -1,0 +1,53 @@
+// Common styles of the project
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-size: rem(16);
+    line-height: 1.25;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+.page-wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.empty {
+    height: 0;
+}
+
+// Grid
+
+.cf,
+.row {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+.row {
+    margin: 0 -20px;
+    margin: 0 rem(-20);
+}

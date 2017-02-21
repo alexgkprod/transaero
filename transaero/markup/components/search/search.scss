@@ -1,0 +1,55 @@
+.search {
+    position: relative;
+
+    width: 250px;
+    width: rem(250);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 560px) {
+        float: right;
+        margin: 28px 20px 22px;
+        margin: rem(28) rem(20) rem(22);
+    }
+
+    &__text {
+        display: block;
+        width: 100%;
+        padding: 0;
+        padding: 5px 8px;
+        padding: rem(5) rem(8);
+        margin: 0;
+
+        font-size: 14px;
+        font-size: rem(14);
+        line-height: 20px;
+        line-height: rem(20);
+
+        border: none;
+        border: 1px solid #c8c8c8;
+        border-width: rem(1);
+        outline: none;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: block;
+        width: 32px;
+        width: rem(32);
+        height: 32px;
+        height: rem(32);
+        padding: 0;
+        margin: 0;
+
+        font-size: 0;
+
+        border: none;
+        
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+    }
+}
