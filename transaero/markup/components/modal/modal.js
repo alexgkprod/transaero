@@ -1,5 +1,3 @@
-import 'magnific-popup';
-
 $(document).ready(function() {
     $('#modal-open').magnificPopup({
         showCloseBtn: false,
@@ -16,4 +14,8 @@ $(document).ready(function() {
         removalDelay: 250,
         mainClass: 'mfp-fade'
     });
+});
+
+$('#modal-close').on( "click", function() {
+    $.magnificPopup.close();
 });

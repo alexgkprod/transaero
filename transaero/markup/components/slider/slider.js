@@ -1,5 +1,3 @@
-import 'slick-carousel';
-
 $(document).ready(function () {
     $('.slider__list').slick({
         infinite: true,

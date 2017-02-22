@@ -1,5 +1,3 @@
-import 'jquery-validation';
-
 $(document).ready(function () {
     $('#form-sign-in').validate({
         rules: {
