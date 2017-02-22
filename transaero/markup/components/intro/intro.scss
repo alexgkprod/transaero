@@ -28,7 +28,7 @@
 
         animation: fadeEffect 1s;
 
-        &:first-child {
+        &_active {
             display: block;
         }
     }
