@@ -1,1 +1,3 @@
-var data = {modal: {}}
+var data = { modal: {
+    title: 'Войти'
+}}

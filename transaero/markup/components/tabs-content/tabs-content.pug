@@ -1,0 +1,12 @@
+include ../slider/slider
+
+mixin tabs-content(data)
+    +b.UL.tabs-content()&attributes(attributes)
+        each item in tabsContent
+            if item.active
+                +e.item_active(id=(item.name || ''))
+                    +slider()
+            else
+                +e.item(id=(item.name || ''))
+                    +e.IMG.img(src=(item.src || '') alt=(item.alt || '') width=(item.width || '') height=(item.height || ''))
+                    +e.H2.title= item.title

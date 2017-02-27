@@ -3,5 +3,5 @@ include ../form/form
 mixin modal(data)
     +b.modal.mfp-hide#modal-sign-in()&attributes(attributes)
         +e.BUTTON.close#modal-close
-        +e.H2.title Войти
+        +e.H2.title= (modal.title || '')
         +form()

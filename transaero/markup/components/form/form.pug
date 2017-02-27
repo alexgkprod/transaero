@@ -1,9 +1,7 @@
 mixin form(data)
     +b.FORM.form#form-sign-in(action="index.php" method="post" name="form-sign-in")&attributes(attributes)
-        +e.item
-            +e.LABEL.label(for="email") E-mail
-            +e.INPUT.input#email(type="email" name="email" required)
-        +e.item
-            +e.LABEL.label(for="password") Пароль
-            +e.INPUT.input#password(type="password" name="password" required)
+        each item in form
+            +e.item
+                +e.LABEL.label(for=(item.type || ''))= (item.name || '')
+                +e.INPUT.input(type=(item.type || '') name=(item.type || '') id=(item.type) required)
         +e.INPUT.btn(type="submit" value="Войти")

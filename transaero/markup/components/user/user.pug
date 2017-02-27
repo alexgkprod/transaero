@@ -1,7 +1,12 @@
+include ../icon/icon
+
 mixin user(data)
     +b.UL.user()&attributes(attributes)
-        +e.item
-            +e.A.link_icon(href="#") Онлайн-табло
-                != pugHelpers.Icon.call(locals, {iconName: 'icon_clock', className: 'svg-icon', iconWidth: '20', iconHeight: '20'})
-        +e.item
-            +e.A.link#modal-open(href="#modal-sign-in") Вход и регистрация
+        each item in user
+            +e.item
+                if item.icon
+                    +e.A.link_icon(href=(item.href || jv0))= item.text
+                        +icon({ icon: ('icon_' + item.pic ) })
+                else
+                    +e.A.link#modal-open(href=(item.href || jv0))= item.text
+                    

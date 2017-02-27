@@ -1,9 +1,8 @@
 mixin lang(data)
     +b.UL.lang()&attributes(attributes)
-        +e.item
-            +e.A.link(href="#") USA site
-        +e.item
-            +e.A.link(href="#") Deutsch site
-        +e.item
-            +e.SPAN.label Россия:
-            +e.link(href="#") Switch to english
+        each item in lang
+            +e.item
+                if item.label
+                    +e.SPAN.label= item.country
+                +e.link(href=(item.href || jv0))= (item.text || 'lang link')
+                

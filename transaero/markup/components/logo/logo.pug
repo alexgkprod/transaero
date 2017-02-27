@@ -1,4 +1,4 @@
 mixin logo(data)
     +b.logo()&attributes(attributes)
-        +e.A.link(href="#")
-            +e.IMG.img(src="%=static=%img/general/logo.jpg" alt="Transaero Logo" width="267" height="60")
+        +e.A.link(href=(logo.href || jv0))
+            +e.IMG.img(src=(logo.src || '#') alt=(logo.alt) width=(logo.width) height=(logo.height))

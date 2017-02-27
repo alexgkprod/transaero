@@ -1,8 +1,8 @@
 mixin tabs(data)
     +b.UL.tabs()&attributes(attributes)
-        +e.btn
-            +e.A.link_active(href="#first" data-tab="first") Возможности
-        +e.btn
-            +e.A.link(href="#second" data-tab="second") Информация
-        +e.btn
-            +e.A.link(href="#third" data-tab="third") Привилегии
+        each item in tabs
+            +e.btn
+                if item.active
+                    +e.A.link_active(href=('#' + item.tab) data-tab= item.tab)= item.text
+                else
+                    +e.A.link(href=('#' + item.tab) data-tab= item.tab)= item.text
